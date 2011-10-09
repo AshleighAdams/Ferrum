@@ -1,0 +1,8 @@
+*.exe
+*.dll
+*.so
+*.obj
+*.user
+*.userprefs
+*.pidb
+*.ncb

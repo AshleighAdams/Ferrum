@@ -1,0 +1,15 @@
+* Classes should represent well-defined objects. "Message", "Block" and "Octant" would make good classes. "Renderer", "*Manager", "*Handler" would not.
+* Classes and structs should be named in upper camel case.
+ 
+* Public methods and functions should be named in upper camel case.
+* Public class fields should be named in lowercase with underscores delimiting words. ("blah_blah_blah") 
+* Private class members should have an underscore prefix and should be in upper camel case.
+* Local variables should be named in lowercase with underscores delimiting words.
+* Variable names should not reflect their type, only their usage (private, class member, etc).
+* The type of a variable should be specified completely before the variable ("Type* var" is okay, "Type *var" is not)
+* Global variables should only be used for caching. They should not store program state.
+
+* Header files should begin "#pragma once" and a header gaurd ("_H_HEADER_NAME") followed by the headers they reference followed by their declarations.
+* External headers should be included before project headers.
+
+* Tabs should be used for indentation, spaces may be used for alignment (if ever).
