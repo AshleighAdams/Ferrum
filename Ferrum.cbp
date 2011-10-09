@@ -31,8 +31,16 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
+			<Add directory="C:\SDK\SFML-1.6\include" />
 		</Compiler>
-		<Unit filename="src/main.cpp" />
+		<Linker>
+			<Add option="-lsfml-system" />
+			<Add option="-lsfml-graphics" />
+			<Add option="-lsfml-window" />
+			<Add option="-lsfml-audio" />
+			<Add directory="C:\SDK\SFML-1.6\lib" />
+		</Linker>
+		<Unit filename="src\main.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
