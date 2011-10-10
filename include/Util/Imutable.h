@@ -6,18 +6,18 @@ class Immutable
 {
 public:
 	virtual ~Immutable(){}
-	void Refrence()
+	void Ref()
 	{
-		_RefrenceCount++;
+		_RefCount++;
 	}
-	void UnRefrence()
+	void Unref()
 	{
-		_RefrenceCount--;
-		if( this->_RefrenceCount == 0)
+		_RefCount--;
+		if( this->_RefCount == 0)
 			delete this;
 	}
 protected:
-	unsigned int _RefrenceCount;
+	unsigned int _RefCount;
 };
 
 #endif // REF_CLASS_H
