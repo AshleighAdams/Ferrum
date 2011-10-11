@@ -8,8 +8,10 @@
 class Entity
 {
 public:
-	virtual Entity() {}
-	virtual ~Entity() {}
+	virtual ~Entity() 
+	{
+	
+	}
 };
 
 #endif // ENTITY_H
