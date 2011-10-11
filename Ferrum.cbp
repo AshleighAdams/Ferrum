@@ -40,6 +40,11 @@
 			<Add option="-lsfml-audio" />
 			<Add directory="C:\SDK\SFML-1.6\lib" />
 		</Linker>
+		<Unit filename="src\Base.h" />
+		<Unit filename="src\Entity\Entity.h" />
+		<Unit filename="src\Util\Imutable.h" />
+		<Unit filename="src\World\World.h" />
+		<Unit filename="src\World\world.cpp" />
 		<Unit filename="src\main.cpp" />
 		<Extensions>
 			<code_completion />

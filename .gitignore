@@ -9,3 +9,4 @@ obj/*
 *.pidb
 *.ncb
 *.depend
+*.layout
