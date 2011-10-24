@@ -7,7 +7,7 @@
 
 // SFML stuff here
 #include <SFML/Graphics.hpp>
-#typedef sf:Vector3 Vector;
+typedef sf::Vector3<double> Vector;
 
 // Angle stuff here
 #include "Math/Angle.h"

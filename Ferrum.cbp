@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="C:\Users\Owner\Projects\Ferrum\src\" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="C:\Users\Owner\Projects\Ferrum\src\" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -46,6 +48,9 @@
 		<Unit filename="src\Entity\Entity.h" />
 		<Unit filename="src\Math\Angle.h" />
 		<Unit filename="src\Util\Imutable.h" />
+		<Unit filename="src\Geometry\Octant.cpp" />
+		<Unit filename="src\Geometry\Octant.h" />
+		<Unit filename="src\Util\Immutable.h" />
 		<Unit filename="src\World\World.h" />
 		<Unit filename="src\World\world.cpp" />
 		<Unit filename="src\main.cpp" />

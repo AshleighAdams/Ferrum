@@ -6,8 +6,9 @@
 * Private class members should have an underscore prefix and should be in upper camel case.
 * Local variables should be named in lowercase with underscores delimiting words.
 * Variable names should not reflect their type, only their usage (private, class member, etc).
-* The type of a variable should be specified completely before the variable ("Type* var" is okay, "Type *var" is not)
+* The type of a variable should be specified completely before the variable except when not possible ("Type* var" is okay, "Type *var" is not)
 * Global variables should only be used for caching. They should not store program state.
+* The "this" keyword should be used explicitly whenever possible
 
 * Header files should begin "#pragma once" and a header gaurd ("_H_HEADER_NAME") followed by the headers they reference followed by their declarations.
 * External headers should be included before project headers.
