@@ -29,7 +29,7 @@ void Camera::UpdateMatrix()
 
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
-	gluPerspective(90.0, 1.0, 1.0, 10.0);
+	gluPerspective(cos(M_PI/4.0), 1.0, 1.0, 100.0);
 	
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();

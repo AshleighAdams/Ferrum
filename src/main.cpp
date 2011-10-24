@@ -94,8 +94,7 @@ int main()
 	glEnable(GL_DEPTH_TEST);
 	
 	Camera* cam = new Camera();
-	cam->Position.x = -1.0;
-	cam->Position.y = -1.0;
+	
 	
 	LoadTestObject();
 	
@@ -111,7 +110,8 @@ int main()
 		
 		App.Clear();
 		
-		
+		cam->Position.x = 10.0;
+		//cam->Position.y = 10.0;
 		cam->UpdateMatrix();
 		DrawTestObject();
 		

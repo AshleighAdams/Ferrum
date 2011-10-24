@@ -4,6 +4,7 @@
 
 // STL stuff here
 #include <string>
+#include <cmath>
 using namespace std;
 
 // OpenGL
