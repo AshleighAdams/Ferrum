@@ -5,29 +5,29 @@
 
 Camera::Camera()
 {
-	this->Position.X = 0.;
-	this->Position.Y = 0.;
-	this->Position.Z = 0.;
+	this->Position.x = 0.;
+	this->Position.y = 0.;
+	this->Position.z = 0.;
 	
 	this->Orientation.Pitch = 0.;
 	this->Orientation.Yaw = 0.;
 	this->Orientation.Roll = 0.;
 }
 
-Camera::Update(sf::RenderWindow& App)
+Camera::~Camera()
 {
 }
 
-Camera::UpdateMatrix()
+void Camera::Update(sf::RenderWindow& App)
+{
+}
+
+void Camera::UpdateMatrix()
 {
 	glMatrixMode( GL_MODELVIEW );
 	glLoadIdentity();
-	glTranslatef( m_xTransform, m_yTransform, m_zTransform );
-	glRotatef( m_xRotation, 1.0f, 0.0f, 0.0f );
-	glRotatef( m_yRotation, 0.0f, 1.0f, 0.0f );
-	glRotatef( m_zRotation, 0.0f, 0.0f, 1.0f );
-}
-
-Camera::~Camera()
-{
+	glTranslatef(this->Position.x, this->Position.y, this->Position.z);
+	glRotatef( this->Orientation.Pitch, 1.0f, 0.0f, 0.0f );
+	glRotatef( this->Orientation.Yaw, 0.0f, 1.0f, 0.0f );
+	glRotatef( this->Orientation.Roll, 0.0f, 0.0f, 1.0f );
 }
