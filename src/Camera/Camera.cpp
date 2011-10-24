@@ -1,7 +1,5 @@
-
+#include "Base.h"
 #include "Camera/Camera.h"
-
-#include "GL/gl.h"
 
 Camera::Camera()
 {
@@ -20,11 +18,12 @@ Camera::~Camera()
 
 void Camera::Update(sf::RenderWindow& App)
 {
+	// Not yet implemented.
 }
 
 void Camera::UpdateMatrix()
 {
-	// DrSchnz: Getting link errors?  Add opengl32 to the linker options!
+	// DrSchnz: Getting link errors?  Add "opengl32" to the linker options!
 	glMatrixMode( GL_MODELVIEW );
 	glLoadIdentity();
 	glTranslatef(this->Position.x, this->Position.y, this->Position.z);
