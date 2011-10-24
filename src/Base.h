@@ -4,6 +4,7 @@
 
 // STL stuff here
 #include <string>
+using namespace std;
 
 // OpenGL
 #include "GL/glew.h"
