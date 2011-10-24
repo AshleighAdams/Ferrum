@@ -24,6 +24,7 @@ void Camera::Update(sf::RenderWindow& App)
 
 void Camera::UpdateMatrix()
 {
+	// DrSchnz: Getting link errors?  Add opengl32 to the linker options!
 	glMatrixMode( GL_MODELVIEW );
 	glLoadIdentity();
 	glTranslatef(this->Position.x, this->Position.y, this->Position.z);
