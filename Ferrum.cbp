@@ -41,7 +41,10 @@
 			<Add directory="C:\SDK\SFML-1.6\lib" />
 		</Linker>
 		<Unit filename="src\Base.h" />
+		<Unit filename="src\Camera\Camera.cpp" />
+		<Unit filename="src\Camera\Camera.h" />
 		<Unit filename="src\Entity\Entity.h" />
+		<Unit filename="src\Math\Angle.h" />
 		<Unit filename="src\Util\Imutable.h" />
 		<Unit filename="src\World\World.h" />
 		<Unit filename="src\World\world.cpp" />

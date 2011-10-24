@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="src\Entity\Entity.h" open="1" top="1" tabpos="4">
-		<Cursor position="133" topLine="0" />
+	<File name="src\Base.h" open="1" top="0" tabpos="6">
+		<Cursor position="181" topLine="0" />
 	</File>
-	<File name="src\Util\Imutable.h" open="1" top="0" tabpos="3">
+	<File name="src\Camera\Camera.cpp" open="1" top="1" tabpos="3">
+		<Cursor position="491" topLine="0" />
+	</File>
+	<File name="src\Camera\Camera.h" open="1" top="0" tabpos="4">
+		<Cursor position="149" topLine="0" />
+	</File>
+	<File name="src\Entity\Entity.h" open="0" top="0" tabpos="4">
+		<Cursor position="80" topLine="0" />
+	</File>
+	<File name="src\Math\Angle.h" open="1" top="0" tabpos="5">
+		<Cursor position="295" topLine="0" />
+	</File>
+	<File name="src\Util\Imutable.h" open="0" top="0" tabpos="3">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="src\World\World.h" open="1" top="0" tabpos="2">
+	<File name="src\World\World.h" open="0" top="0" tabpos="2">
 		<Cursor position="0" topLine="0" />
 	</File>
 	<File name="src\main.cpp" open="1" top="0" tabpos="1">

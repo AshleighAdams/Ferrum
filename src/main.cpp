@@ -15,8 +15,9 @@ int main()
 				App.Close();
 				break;
 			}
+			
 		}
-		
+				
 		App.Clear();
 		App.Display();
 	}
