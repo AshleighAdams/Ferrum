@@ -93,8 +93,9 @@ int main()
 	
 	glEnable(GL_DEPTH_TEST);
 	
-	
 	Camera* cam = new Camera();
+	cam->Position.x = -1.0;
+	cam->Position.y = -1.0;
 	
 	LoadTestObject();
 	
@@ -102,17 +103,15 @@ int main()
 	{
 		sf::Event Event;
 		while (App.GetEvent(Event))
-		{
 			if (Event.Type == sf::Event::Closed || (Event.Type == sf::Event::KeyPressed && Event.Key.Code == sf::Key::Escape))
 			{
 				App.Close();
 				break;
 			}
-			
-		}
+		
 		App.Clear();
 		
-		cam->Position.y += 1.0;
+		
 		cam->UpdateMatrix();
 		DrawTestObject();
 		
