@@ -10,6 +10,8 @@ Camera::Camera()
 	this->Orientation.Pitch = 0.;
 	this->Orientation.Yaw = 0.;
 	this->Orientation.Roll = 0.;
+	
+	
 }
 
 Camera::~Camera()
@@ -23,11 +25,27 @@ void Camera::Update(sf::RenderWindow& App)
 
 void Camera::UpdateMatrix()
 {
-	// DrSchnz: Getting link errors?  Add "opengl32" to the linker options!
+	// DrSchnz: Getting link errors?  Add "opengl32", "glew32" and "glu32" to the linker options!
+
+	/* Setup the view of the cube. */
+	
+	glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
+	gluPerspective(90.0, 1.0, 1.0, 500.0);
+	
+	
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
+	gluLookAt(this->Position.x, this->Position.y, this->Position.z, /* Eye */
+		0.0, 0.0, 0.0, /* Center */
+		0.0, 0.0, 1.0); /* Up */
+	
+	/*
 	glMatrixMode( GL_MODELVIEW );
 	glLoadIdentity();
 	glTranslatef(this->Position.x, this->Position.y, this->Position.z);
 	glRotatef( this->Orientation.Pitch, 1.0f, 0.0f, 0.0f );
 	glRotatef( this->Orientation.Yaw, 0.0f, 1.0f, 0.0f );
 	glRotatef( this->Orientation.Roll, 0.0f, 0.0f, 1.0f );
+	*/
 }

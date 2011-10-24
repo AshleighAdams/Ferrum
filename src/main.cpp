@@ -89,10 +89,12 @@ void FreeTestObject()
 int main()
 {
 	sf::RenderWindow App(sf::VideoMode(800, 600, 32), "Ferrum");
-	glewInit(); 
+	glewInit();
+	
+	glEnable(GL_DEPTH_TEST);
+	
 	
 	Camera* cam = new Camera();
-	
 	
 	LoadTestObject();
 	
@@ -101,8 +103,7 @@ int main()
 		sf::Event Event;
 		while (App.GetEvent(Event))
 		{
-			if ((Event.Type == sf::Event::Closed) || 
-			   ((Event.Type == sf::Event::KeyPressed) && (Event.Key.Code == sf::Key::Escape)))
+			if (Event.Type == sf::Event::Closed || (Event.Type == sf::Event::KeyPressed && Event.Key.Code == sf::Key::Escape))
 			{
 				App.Close();
 				break;
@@ -111,10 +112,8 @@ int main()
 		}
 		App.Clear();
 		
-		//cam->Position.x += 0.1f;
-		cam->Position.z += 0.01f;
+		cam->Position.y += 1.0;
 		cam->UpdateMatrix();
-		
 		DrawTestObject();
 		
 		App.Display();

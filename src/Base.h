@@ -8,6 +8,7 @@ using namespace std;
 
 // OpenGL
 #include "GL/glew.h"
+#include "GL/glu.h"
 #include "GL/gl.h"
 
 // SFML stuff here
