@@ -9,7 +9,7 @@ class Camera
 public:
 	Camera();
 	~Camera();
-	void Update(sf::RenderWindow& App);
+	void Update();
 	void UpdateMatrix();
 	Vector Position;
 	Angle Orientation; // TODO: Shitty name

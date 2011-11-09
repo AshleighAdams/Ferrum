@@ -7,26 +7,14 @@
 #include <cmath>
 using namespace std;
 
-// OpenGL
-#include "GL/glew.h"
-#include "GL/glu.h"
-#include "GL/gl.h"
-
-// SFML stuff here
-#include <SFML/Graphics.hpp>
-typedef sf::Vector3<double> Vector;
-
 // Our stuff now
 #include "Math/Angle.h"
 
 
-// Helper stuff
-//TODO: Implement this properly
-struct Vertex
-{
-	float x, y, z;        //Vertex
-	float nx, ny, nz;     //Normal
-	float s0, t0;         //Texcoord0
-};
+// Irrlicht stuff now
+#include "irrlicht.h"
+
+// Typedef to make this better
+typedef irr::core::vector3d<double> Vector;
 
 #endif // F_BASE_H
