@@ -15,6 +15,6 @@ using namespace std;
 #include "irrlicht.h"
 
 // Typedef to make this better
-typedef irr::core::vector3d<double> Vector;
+typedef irr::core::vector3df Vector;
 
 #endif // F_BASE_H
